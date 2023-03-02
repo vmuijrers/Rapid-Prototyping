@@ -9,3 +9,4 @@ Welcome to the rapid prototyping page, here you will find some useful scripts to
 - TimerManager - Use this class to run timers (it works like an alarm, if the time runs out, something happens)
 - InputManager - Can be easily changed to use throughout your project, allows simulated button presses
 - UI Manager - Can pickup items and drag them around in the Inventory/UI
+- Pickup Script - Pickup and drop objects with a rigidbody
