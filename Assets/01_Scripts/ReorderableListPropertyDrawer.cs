@@ -170,3 +170,30 @@ public class ReorderableListPropertyDrawer : PropertyDrawer
         return derivedTypes;
     }
 }
+
+
+///Example usage
+public class ReorderableList<T>
+{
+    [SerializeReference]
+    public List<T> list = new List<T>();
+}
+
+public class ReorderableListValidator : ReorderableList<ConcreteClass>
+{
+}
+
+public abstract class CustomAbstractClass
+{
+}
+
+public class ConcreteClass : CustomAbstractClass
+{
+}
+
+public class SomeMonoBehaviour : MonoBehaviour
+{
+    // You can now add items via the + icon on the reorderablelist which derive from CustomAbstractClass
+    [SerializeReference]
+    public ReorderableListValidator validatorList = new ReorderableListValidator();
+}
